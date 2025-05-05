@@ -1,0 +1,45 @@
+.form-group {
+  margin-bottom: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: clamp(14px, 2vw, 16px);
+  background-color: rgb(80, 29, 100);
+
+}
+input, textarea,::placeholder{
+  color: rgb(228, 233, 236);
+}
+
+.error, .success {
+  font-size: clamp(12px, 1.5vw, 14px);
+  margin-top: 5px;
+}
+.error { color: red; }
+.success { color: green; }
+
+.buttonCheck {
+  background: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: clamp(14px, 2vw, 16px);
+}
+
+.buttonCheck:disabled {
+  background: #cccccc;
+  cursor: not-allowed;
+}
+
+.valid { border-color: green; }
+.invalid { border-color: red; }

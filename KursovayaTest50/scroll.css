@@ -1,0 +1,21 @@
+.swiperBody {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: clamp(24px, 6vw, 48px);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

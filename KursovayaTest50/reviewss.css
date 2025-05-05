@@ -1,0 +1,106 @@
+.reviews {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .review {
+    padding: clamp(10px, 2vw, 15px);
+    margin-bottom: 15px;
+    border-radius: 5px;
+    width: 48%;
+    height: 40%;
+  }
+  
+  .review-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .standart-button {
+    height: 1.4vh;
+    background-color: #ddd;
+    color: #511fc5;
+    padding: 10px;
+    border: 2px solid #511fc5;
+    border-radius: 5px;
+    font-size: 1vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .standart-button:hover {
+    color: #ddd;
+    background-color: #511fc5;
+    transition: 0.2s ease-in-out;
+  }
+  
+  .avatar {
+    width: clamp(50px, 20%, 100px);
+    height: auto;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+  }
+  
+  .review-info {
+    flex-grow: 1;
+  }
+  
+  .review-date {
+    font-size: clamp(10px, 1.5vw, 14px);
+  }
+  
+  .review-footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .like-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #511fc5;
+  }
+  
+  .liked {
+    color: red;
+  }
+  
+  .show-all {
+    display: block;
+    margin: 20px auto;
+    padding: 8px 15px;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: clamp(14px, 2vw, 16px);
+  }
+  
+  .rowblock {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 1vw;
+  }
+  
+  .column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+  }
+  
