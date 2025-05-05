@@ -1,5 +1,5 @@
 <?php
-// require 'minelinkk.php';
+require 'minelinkk.php';
 require 'db.php';
 
 
@@ -61,7 +61,7 @@ if (isset($_SESSION['user_id'])) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="styleeee.css">
+  <link rel="stylesheet" href="styleee.css">
   <link rel="stylesheet" href="allay.css">
   <link rel="stylesheet" href="scroll.css">
   <link rel="stylesheet" href="foliage.css">
@@ -494,14 +494,14 @@ if (isset($_SESSION['user_id'])) {
                 <div class="block1Inside">
                   <div class="columnblock">
                     <div class="upscale card">
-                      <img src="image/postroika1.jpg" class="postroika" alt="">
+                      <img src="image/postroika11.jpg" class="postroika" alt="">
                       <div>
                         <p>Строитель:</p>
                         <p>SashaSigmaBoss</p>
                       </div>
                     </div>
                     <div class="upscale card">
-                      <img src="image/postroika2.webp" class="postroika" alt="">
+                      <img src="image/postroika22.jpg" class="postroika" alt="">
                       <div>
                         <p>Строитель:</p>
                         <p>Demiurge</p>
@@ -510,14 +510,14 @@ if (isset($_SESSION['user_id'])) {
                   </div>
                   <div class="columnblock">
                     <div class="upscale card">
-                      <img src="image/postroika3.jpg" class="postroika" alt="">
+                      <img src="image/postroika33.jpg" class="postroika" alt="">
                       <div>
                         <p>Строитель:</p>
                         <p>L0VAI</p>
                       </div>
                     </div>
                     <div class="upscale card">
-                      <img src="image/postroika4.webp" class="postroika" alt="">
+                      <img src="image/postroika44.jpg" class="postroika" alt="">
                       <div>
                         <p>Строитель:</p>
                         <p>FOXS1DE</p>
@@ -526,14 +526,14 @@ if (isset($_SESSION['user_id'])) {
                   </div>
                   <div class="columnblock">
                     <div class="upscale card">
-                      <img src="image/postroika5.webp" class="postroika" alt="">
+                      <img src="image/postroika55.jpg" class="postroika" alt="">
                       <div>
                         <p>Строитель:</p>
                         <p>KEXIST</p>
                       </div>
                     </div>
                     <div class="upscale card">
-                      <img src="image/postroika6.webp" class="postroika" alt="">
+                      <img src="image/postroika66.jpg" class="postroika" alt="">
                       <div>
                         <p>Строитель:</p>
                         <p>Marmok</p>
@@ -589,9 +589,11 @@ if (isset($_SESSION['user_id'])) {
         <div class="modal-content card">
           <span onclick="document.getElementById('loginModal').style.display='none'" style="float:right;cursor:pointer">&times;</span>
           <h2>Вход</h2>
-          <form method="POST">
-            <input type="text" name="login" placeholder="Логин" required>
-            <input type="password" name="password" placeholder="Пароль" required>
+          <form style="display: flex; flex-direction: column;" method="POST">
+          <div style="display: flex; justify-content: space-between;">
+            <input type="text" class="miniinput" name="login" placeholder="Логин" required>
+            <input type="password" class="miniinput" name="password" placeholder="Пароль" required>
+          </div>
             <?php if (isset($login_error)): ?>
               <p class="error"><?= $login_error ?></p>
             <?php endif; ?>
@@ -604,11 +606,15 @@ if (isset($_SESSION['user_id'])) {
         <div class="modal-content card">
           <span onclick="document.getElementById('registerModal').style.display='none'" style="float:right;cursor:pointer">&times;</span>
           <h2>Регистрация</h2>
-          <form method="POST">
-            <input type="text" name="name" placeholder="Имя" required>
-            <input type="text" name="username" placeholder="Ник" required>
-            <input type="text" name="login" placeholder="Логин" required>
-            <input type="password" name="password" placeholder="Пароль" required>
+          <form style="display: flex; flex-direction: column;" method="POST">
+          <div style="display: flex; justify-content: space-between;">
+            <input type="text" class="miniinput" name="name" placeholder="Имя" required>
+            <input type="text" class="miniinput" name="username" placeholder="Ник" required>
+          </div>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="text" class="miniinput" name="login" placeholder="Логин" required>
+            <input type="password" class="miniinput" name="password" placeholder="Пароль" required>
+          </div>
             <textarea name="bio" placeholder="О себе"></textarea>
             <button type="submit" name="register" class="formbutton registerbutton">Зарегистрироваться</button>
             <?php if (isset($register_error)): ?>

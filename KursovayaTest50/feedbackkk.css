@@ -15,6 +15,9 @@ input, textarea {
   background-color: rgb(80, 29, 100);
 
 }
+.miniinput{
+  width: 48%;
+}
 input, textarea,::placeholder{
   color: rgb(228, 233, 236);
 }
